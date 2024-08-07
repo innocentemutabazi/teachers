@@ -1,0 +1,225 @@
+import { injectGlobal } from "@emotion/css";
+
+export default function createGlobalStyle() {
+  injectGlobal`
+    body {
+      margin: 0; line-height: normal;
+    }
+:root {
+
+/* fonts */
+--font-poppins: Poppins;
+--font-roboto-slab: 'Roboto Slab';
+--font-roboto: Roboto;
+--font-inter: Inter;
+--font-dm-sans: 'DM Sans';
+--font-karma: Karma;
+--font-open-sans: 'Open Sans';
+--previewthemeforestnet-kumbh-sans-medium-20: 'Kumbh Sans';
+
+/* font sizes */
+--previewthemeforestnet-kumbh-sans-medium-20-size: 20px;
+--previewthemeforestnet-kumbh-sans-regular-16-size: 16px;
+--font-size-11xl: 30px;
+--font-size-lg: 18px;
+--previewthemeforestnet-kumbh-sans-medium-24-size: 24px;
+--font-size-6xl: 25px;
+--font-size-3xl: 22px;
+--font-size-41xl: 60px;
+--font-size-17xl: 36px;
+--font-size-29xl: 48px;
+--font-size-mini: 15px;
+--font-size-39xl: 58px;
+--font-size-16xl: 35px;
+--font-size-27xl: 46px;
+--font-size-31xl: 50px;
+--font-size-21xl: 40px;
+--font-size-71xl: 90px;
+--font-size-8xl: 27px;
+--font-size-26xl: 45px;
+--font-size-lgi: 19px;
+--font-size-45xl: 64px;
+--previewthemeforestnet-kumbh-sans-regular-14-size: 14px;
+--previewthemeforestnet-kumbh-sans-medium-32-size: 32px;
+--font-size-7xl: 26px;
+
+/* Colors */
+--color-whitesmoke-100: #f9fafc;
+--previewthemeforestnet-athens-gray: #e8eaed;
+--color-mediumslateblue: #0166ff;
+--pure-white: #fff;
+--color-dimgray-100: #6a6b6c;
+--previewthemeforestnet-trout: #515a67;
+--color-dimgray-200: #565a5b;
+--color-dimgray-300: #534d5e;
+--color-gainsboro: #d9d9d9;
+--color-darkslateblue: #3d246c;
+--color-darkgray-100: #b1b4b6;
+--previewthemeforestnet-gray-chateau: #98a1ae;
+--previewthemeforestnet-gray-chateau-8: rgba(152, 161, 174, 0.08);
+--color-gray-100: #07222c;
+--color-gray-200: #190d30;
+--color-gray-300: #07152f;
+--color-darkgoldenrod: #c28f2e;
+--color-goldenrod: #f5c362;
+--color-steelblue-100: #309dc1;
+--color-steelblue-200: #2f9dc1;
+--color-steelblue-300: #1785a8;
+--color-steelblue-400: rgba(23, 133, 168, 0.09);
+--color-midnightblue: #06053a;
+--color-darkslategray-100: #19566a;
+--color-darkslategray-200: #313131;
+--color-royalblue: #0077ff;
+--color-snow: #fffbfb;
+--color-black: #000;
+--color-red: #ff0000;
+--previewthemeforestnet-dodger-blue: #47a9ff;
+
+/* Gaps */
+--gap-100xl-6: 119.6px;
+--gap-11xl: 30px;
+--gap-96xl: 115px;
+--gap-38xl: 57px;
+--gap-10xl: 29px;
+--gap-0: 0px;
+--gap-6xl-9: 25.9px;
+--gap-2xs-5: 10.5px;
+--gap-149xl-2: 168.2px;
+--gap-65xl: 84px;
+--gap-2xl: 21px;
+--gap-23xl: 42px;
+--gap-xl: 20px;
+--gap-lg-2: 18.2px;
+--gap-9xl-2: 28.2px;
+--gap-base-2: 16.2px;
+--gap-12xl-5: 31.5px;
+--gap-14xl: 33px;
+--gap-base: 16px;
+--gap-lgi: 19px;
+--gap-5xl-7: 24.7px;
+--gap-31xl: 50px;
+--gap-6xl: 25px;
+--gap-25xl: 44px;
+--gap-3xl: 22px;
+--gap-xl-5: 20.5px;
+--gap-3xs: 10px;
+--gap-6xs: 7px;
+--gap-xs: 12px;
+--gap-mini: 15px;
+--gap-30xl: 49px;
+--gap-5xl: 24px;
+--gap-43xl: 62px;
+--gap-12xl: 31px;
+--gap-16xl: 35px;
+--gap-mid: 17px;
+--gap-7xs: 6px;
+--gap-13xl: 32px;
+--gap-21xl: 40px;
+--gap-5xs: 8px;
+--gap-20xl-5: 39.5px;
+--gap-lg: 18px;
+--gap-166xl-8: 185.8px;
+--gap-74xl: 93px;
+--gap-4xl: 23px;
+--gap-27xl: 46px;
+--gap-10xl-5: 29.5px;
+--gap-57xl-5: 76.5px;
+--gap-19xl: 38px;
+--gap-2xs: 11px;
+--gap-67xl: 86px;
+--gap-103xl: 122px;
+--gap-42xl: 61px;
+--gap-15xl-4: 34.4px;
+--gap-mini-6: 14.6px;
+--gap-359xl: 378px;
+--gap-170xl: 189px;
+--gap-28xl: 47px;
+--gap-75xl: 94px;
+--gap-51xl: 70px;
+--gap-9xl: 28px;
+--gap-9xs: 4px;
+--gap-29xl: 48px;
+
+/* Paddings */
+--padding-111xl: 130px;
+--padding-162xl: 181px;
+--padding-35xl-4: 54.4px;
+--padding-160xl: 179px;
+--padding-70xl: 89px;
+--padding-71xl: 90px;
+--padding-65xl: 84px;
+--padding-26xl: 45px;
+--padding-16xl: 35px;
+--padding-25xl: 44px;
+--padding-base-5: 15.5px;
+--padding-7xs-1: 5.1px;
+--padding-xl: 20px;
+--padding-8xl: 27px;
+--padding-3xs-8: 9.8px;
+--padding-12xs: 1px;
+--padding-smi-5: 12.5px;
+--padding-6xl: 25px;
+--padding-30xl: 49px;
+--padding-10xl: 29px;
+--padding-13xl: 32px;
+--padding-smi: 13px;
+--padding-10xs: 3px;
+--padding-base: 16px;
+--padding-xs: 12px;
+--padding-2xs: 11px;
+--padding-44xl-5: 63.5px;
+--padding-9xl: 28px;
+--padding-56xl: 75px;
+--padding-4xs: 9px;
+--padding-3xs: 10px;
+--padding-xs-5: 11.5px;
+--padding-44xl: 63px;
+--padding-12xl: 31px;
+--padding-38xl: 57px;
+--padding-37xl: 56px;
+--padding-51xl: 70px;
+--padding-5xl: 24px;
+--padding-17xl: 36px;
+--padding-11xs: 2px;
+--padding-9xs: 4px;
+--padding-6xs: 7px;
+--padding-2xl: 21px;
+--padding-3xl: 22px;
+--padding-62xl: 81px;
+--padding-34xl: 53px;
+--padding-20xl: 39px;
+--padding-18xl: 37px;
+--padding-14xl: 33px;
+--padding-7xl: 26px;
+--padding-39xl: 58px;
+--padding-40xl: 59px;
+--padding-61xl: 80px;
+--padding-61xl-2: 80.2px;
+--padding-161xl: 180px;
+--padding-mini: 15px;
+--padding-47xl: 66px;
+--padding-135xl: 154px;
+--padding-81xl: 100px;
+--padding-sm: 14px;
+--padding-19xl: 38px;
+--padding-43xl: 62px;
+--padding-7xs: 6px;
+--padding-50xl: 69px;
+--padding-8xs: 5px;
+--padding-46xl: 65px;
+--padding-182xl-2: 201.2px;
+--padding-182xl-1: 201.1px;
+--padding-45xl: 64px;
+--padding-112xl: 131px;
+
+/* Border radiuses */
+--br-xl: 20px;
+--br-6xl: 25px;
+--br-mini: 15px;
+--br-18xl: 37px;
+--br-20xl: 39px;
+--br-9xs: 4px;
+
+}
+`;
+}
